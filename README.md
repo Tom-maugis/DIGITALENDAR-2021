@@ -1,6 +1,6 @@
 # DIGITALENDAR-2021
 Digitalendar est un projet d'Epitech digital, celui ci est réalisé par Tom Maugis.
-Ce projet demande de coder un calendrier "digital" disponible sur portable et PC avec certaines exigences détaillés ici:
+Ce projet demande de coder un calendrier "digital" disponible sur portable et PC avec certaines exigences détaillés ici: *l'anglais sera traduit à l'avenir
 
 To be assured to be given the proper information, you are the one to develop this calendar!
 It must, obviously, contain at least:
