@@ -1,0 +1,73 @@
+{
+    "homepage": "https://cal.openintents.org",
+    "name": "oi-calendar",
+    "author": "friedger@gmail.com",
+    "version": "0.10.1",
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.15",
+        "@fortawesome/free-solid-svg-icons": "^5.7.2",
+        "@fortawesome/react-fontawesome": "^0.1.4",
+        "@types/react": "^16.8.17",
+        "blockstack": "19.1.0",
+        "connected-react-router": "^6.3.2",
+        "history": "^4.7.2",
+        "ical.js": "^1.3.0",
+        "ics": "^2.13.1",
+        "matrix-js-sdk": "^1.0.1",
+        "moment": "^2.24.0",
+        "npm": "^6.8.0",
+        "query-string": "^6.4.2",
+        "react": "^16.8.3",
+        "react-big-calendar": "^0.20.3",
+        "react-bootstrap": "^1.0.0-beta.5",
+        "react-datetime": "^2.16.3",
+        "react-dom": "^16.8.3",
+        "react-jdenticon": "^0.0.8",
+        "react-pdf": "^4.0.3",
+        "react-redux": "^6.0.1",
+        "react-router-dom": "^4.3.1",
+        "react-scripts": "2.1.5",
+        "redux": "^4.0.1",
+        "redux-logger": "^3.0.6",
+        "redux-thunk": "^2.3.0",
+        "typescript": "^4.2.3"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "REACT_APP_VERSION=$(node -pe 'require(\"./package.json\").version') react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "testflow": "mocha spec/*.spec.js --require babel-register --presets @babel/preset-stage-2",
+        "eject": "react-scripts eject",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
+        "lint": "eslint --ext js,jsx ./src ./spec",
+        "lint:fix": "eslint --fix --ext js,jsx ./src ./spec",
+        "prettier-js": "prettier --single-quote --write \"src/**/*.js\"",
+        "prettier-css": "prettier --single-quote --parser css --write \"src/**/*.css\""
+    },
+    "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not ie <= 11",
+        "not op_mini all"
+    ],
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "src/**/*.js": [
+            "npm run prettier-js",
+            "npm run lint:fix",
+            "git add"
+        ],
+        "src/**/*.css": [
+            "npm run prettier-css",
+            "git add"
+        ]
+    }
+}

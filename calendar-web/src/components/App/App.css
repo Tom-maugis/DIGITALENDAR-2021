@@ -1,0 +1,164 @@
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	margin-right: 10px;
+	height: 40px;
+	width: 40px;
+}
+
+.App-header {
+	padding: 1px;
+	color: white;
+}
+
+.App-menu {
+	margin: 8px 10px 0 0;
+}
+
+.body-container {
+	margin: 70px;
+}
+
+.rbc-toolbar-label {
+	color: black;
+	font-weight: bolder;
+	font-size: 20px;
+	font-family: system-ui;
+}
+
+h1,
+.instruction {
+	font-family: fantasy;
+}
+
+.modal {
+	display: block;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.rbc-toolbar span:first-child button:first-child {
+	background-color: #558ed5;
+	color: white;
+	font-weight: bold;
+}
+
+.rbc-toolbar span:first-child button:nth-child(2) {
+	text-indent: -9999px;
+	line-height: 0;
+	margin-left: 5px;
+}
+
+.rbc-toolbar span:first-child button:nth-child(2)::after {
+	content: '◀';
+	text-indent: 0;
+	display: block;
+	line-height: initial;
+	font-size: 13px;
+}
+
+.rbc-toolbar span:first-child button:nth-child(3) {
+	text-indent: -9999px;
+	line-height: 0;
+}
+
+.rbc-toolbar span:first-child button:nth-child(3)::after {
+	content: '▶';
+	text-indent: 0;
+	display: block;
+	line-height: initial;
+	font-size: 13px;
+}
+
+.rbc-active {
+	background-color: #558ed5 !important;
+	color: white !important;
+}
+
+.rbc-header {
+	background-color: black !important;
+	color: white !important;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.rbc-time-view .rbc-row {
+	min-height: 28px;
+}
+
+.rbc-toolbar {
+	flex-wrap: wrap-reverse;
+}
+
+.rbc-day-bg + .rbc-day-bg,
+.rbc-month-row + .rbc-month-row {
+	border: none !important;
+}
+
+.rbc-off-range-bg {
+	border-radius: 10px;
+	margin-left: 1px;
+}
+
+.rbc-month-view {
+	border-radius: 10px;
+}
+
+.rbc-btn-group {
+	white-space: pre-wrap !important;
+	margin-bottom: 10px;
+}
+
+.authUserProfile-Root {
+	margin: 4px;
+	text-align: center;
+}
+
+.authUserProfile-Avatar {
+	border-radius: 50%;
+	height: 20px;
+	width: 20px;
+}
+
+.modal-container {
+	position: relative;
+}
+.modal-container .modal,
+.modal-container .modal-backdrop {
+	position: absolute;
+}
+
+.nav-pills .nav-link {
+	padding: 6px 20px 6px 20px !important;
+}
+
+.nav-pills .nav-link.active {
+	background-color: #337ab7;
+	color: #ffffff !important;
+}
+
+.nav-pills .nav-link:hover:not(.active) {
+	background-color: #e0e0e0;
+}
+
+.nav-justified {
+	white-space: nowrap;
+}
+
+@media screen and (min-width: 1080px) {
+	.body-container {
+		width: 1050px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.body-container {
+		margin: 2%;
+	}
+}
