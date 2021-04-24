@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
+  <div id="navbar">
+this will be the navbar in later updates
     <router-view/>
   </div>
 </template>
