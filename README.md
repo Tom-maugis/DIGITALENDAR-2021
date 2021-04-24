@@ -1,22 +1,21 @@
-# DIGITALENDAR-2021
-Digitalendar est un projet d'Epitech digital, celui ci est réalisé par Tom Maugis.
-Ce projet demande de coder un calendrier "digital" disponible sur portable et PC avec certaines exigences détaillés ici: 
+# double_sundae
 
-*l'anglais sera traduit à l'avenir
+> A calendar made for about 50 people, it is supposed to help you plan things such as work sessions, breaks, lunch or whatever you want to plan.
 
-To be assured to be given the proper information, you are the one to develop this calendar!
-It must, obviously, contain at least:
+## Build Setup
 
+``` bash
+# install dependencies
+npm install
 
-• your activities and projects deadlines (from Moodle API, or directly uploading an ical in your application);
+# serve with hot reload at localhost:8080
+npm run dev
 
-• your classmates birthdays, fetched via an integrated form available in your solution;
+# build for production with minification
+npm run build
 
-• all the public holidays (for you not to wake up without a good reason);
+# build for production and view the bundle analyzer report
+npm run build --report
+```
 
-• the moon phases, essential to know when planting your carrots, or have your hair cut.
-
-*This list is not exhaustive! Many other datasets must be added.
-
-
-Pour le moment mon Digitalendar est un site internet qui permet de voir les jours de l'année avec le jour actuel surligné.
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
