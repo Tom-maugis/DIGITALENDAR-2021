@@ -3,4 +3,4 @@ The Double Sundae calendar allow you to mark events and see past events, no even
 No installation is required to make this code work it's fully independant. 
 
 #USED LANGUAGES:
-Css, Html, JS.
+CSS, HTML, Javascript.
